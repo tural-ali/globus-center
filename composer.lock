@@ -4,8 +4,67 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cea7d8284021060550e1fd14b9fa178d",
+    "hash": "80fef4aefc068e6e9770360a3f587cfb",
     "packages": [
+        {
+            "name": "2amigos/yii2-ckeditor-widget",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-ckeditor-widget.git",
+                "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/2amigos/yii2-ckeditor-widget/zipball/023eb29fedfc3c3121c17688ed237e8688f5eb50",
+                "reference": "023eb29fedfc3c3121c17688ed237e8688f5eb50",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "asset-installer-paths": {
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\ckeditor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "2amigOS! Consulting Group",
+                    "email": "hola@2amigos.us",
+                    "homepage": "http://2amigos.us",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CKEditor widget for Yii2.",
+            "homepage": "http://yiiwheels.com/extension/ckeditor-widget",
+            "keywords": [
+                "2amigos",
+                "CKEditor",
+                "extension",
+                "widget",
+                "yii",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2015-04-30 12:22:25"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.4",
@@ -59,17 +118,77 @@
             ]
         },
         {
-            "name": "bower-asset/jquery",
-            "version": "2.1.3",
+            "name": "bower-asset/bootstrap-material-design",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery.git",
-                "reference": "8f2a9d9272d6ed7f32d3a484740ab342c02541e0"
+                "url": "https://github.com/FezVrasta/bootstrap-material-design.git",
+                "reference": "f40aa0a6e6b5fa19912f10b182f7fab4ab950861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery/zipball/8f2a9d9272d6ed7f32d3a484740ab342c02541e0",
-                "reference": "8f2a9d9272d6ed7f32d3a484740ab342c02541e0",
+                "url": "https://api.github.com/repos/FezVrasta/bootstrap-material-design/zipball/f40aa0a6e6b5fa19912f10b182f7fab4ab950861",
+                "reference": "f40aa0a6e6b5fa19912f10b182f7fab4ab950861",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": "~2.1.1"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/css/material.css",
+                    "dist/js/material.js",
+                    "dist/css/ripples.css",
+                    "dist/js/ripples.js",
+                    "dist/fonts/Material-Design-Icons.eot",
+                    "dist/fonts/Material-Design-Icons.svg",
+                    "dist/fonts/Material-Design-Icons.ttf",
+                    "dist/fonts/Material-Design-Icons.woff"
+                ],
+                "bower-asset-ignore": [
+                    "test",
+                    "screenshots",
+                    "demo",
+                    ".editorconfig",
+                    ".gitignore",
+                    ".jshintrc",
+                    ".travis.yml",
+                    "CONTRIBUTING.md",
+                    "Gruntfile.json",
+                    "index.html",
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests"
+                ]
+            },
+            "license": [
+                "https://github.com/FezVrasta/bootstrap-material-design/blob/master/LICENSE.md"
+            ],
+            "description": "Material Design theme for Bootstrap 3",
+            "keywords": [
+                "android",
+                "bootstrap",
+                "design",
+                "google",
+                "material",
+                "theme"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "2.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery.git",
+                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery/zipball/7751e69b615c6eca6f783a81e292a55725af6b85",
+                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85",
                 "shasum": ""
             },
             "require-dev": {
@@ -84,6 +203,7 @@
                 "bower-asset-ignore": [
                     "**/.*",
                     "build",
+                    "dist/cdn",
                     "speed",
                     "test",
                     "*.md",
@@ -103,16 +223,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.62",
+            "version": "3.1.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "da1a274cefa18a52a0519ac7ffe8e8d31e950eae"
+                "reference": "c40c7287eadc31e341ebbf0c02352eb55b9cbc48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/da1a274cefa18a52a0519ac7ffe8e8d31e950eae",
-                "reference": "da1a274cefa18a52a0519ac7ffe8e8d31e950eae",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/c40c7287eadc31e341ebbf0c02352eb55b9cbc48",
+                "reference": "c40c7287eadc31e341ebbf0c02352eb55b9cbc48",
                 "shasum": ""
             },
             "require": {
@@ -275,6 +395,91 @@
             "time": "2015-03-06 05:21:16"
         },
         {
+            "name": "codemix/yii2-localeurls",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codemix/yii2-localeurls.git",
+                "reference": "13fb3c83a3475aea814ac070850adf5a53c6d3ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codemix/yii2-localeurls/zipball/13fb3c83a3475aea814ac070850adf5a53c6d3ca",
+                "reference": "13fb3c83a3475aea814ac070850adf5a53c6d3ca",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "codemix\\localeurls\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Härtl",
+                    "email": "haertl.mike@gmail.com"
+                }
+            ],
+            "description": "Automatic locale/language management for URLs.",
+            "keywords": [
+                "i18n",
+                "locale",
+                "yii2"
+            ],
+            "time": "2015-05-03 09:23:22"
+        },
+        {
+            "name": "creocoder/yii2-translateable",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/creocoder/yii2-translateable.git",
+                "reference": "a8ceca0a2b55c7087f46e3ffd57103172520f849"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/creocoder/yii2-translateable/zipball/a8ceca0a2b55c7087f46e3ffd57103172520f849",
+                "reference": "a8ceca0a2b55c7087f46e3ffd57103172520f849",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "~1.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "creocoder\\translateable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com"
+                }
+            ],
+            "description": "The translateable behavior for the Yii framework",
+            "keywords": [
+                "translateable",
+                "yii2"
+            ],
+            "time": "2015-02-26 03:19:24"
+        },
+        {
             "name": "ezyang/htmlpurifier",
             "version": "v4.6.0",
             "source": {
@@ -317,6 +522,280 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
+        },
+        {
+            "name": "fortawesome/font-awesome",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "reference": "41b9ed01103e6820c3cb043ba7ddab30ecd3f4c0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jekyll": "1.0.2",
+                "lessc": "1.4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Gandy",
+                    "email": "dave@fontawesome.io",
+                    "homepage": "http://twitter.com/davegandy",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The iconic font and CSS framework",
+            "homepage": "http://fontawesome.io/",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon"
+            ],
+            "time": "2015-01-22 18:09:42"
+        },
+        {
+            "name": "himiklab/yii2-easy-thumbnail-image-helper",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/himiklab/yii2-easy-thumbnail-image-helper.git",
+                "reference": "0013b7ddf9146893cda0e66d4222d433327f8892"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/himiklab/yii2-easy-thumbnail-image-helper/zipball/0013b7ddf9146893cda0e66d4222d433327f8892",
+                "reference": "0013b7ddf9146893cda0e66d4222d433327f8892",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-imagine": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "himiklab\\thumbnail\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "HimikLab",
+                    "homepage": "https://github.com/himiklab/"
+                }
+            ],
+            "description": "Yii2 helper for creating and caching thumbnails on real time",
+            "keywords": [
+                "helper",
+                "image",
+                "thumbnail",
+                "yii2"
+            ],
+            "time": "2014-11-13 14:51:48"
+        },
+        {
+            "name": "imagine/imagine",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avalanche123/Imagine.git",
+                "reference": "f64ec666baaa800edcbf237db41121a569230709"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/f64ec666baaa800edcbf237db41121a569230709",
+                "reference": "f64ec666baaa800edcbf237db41121a569230709",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "sami/sami": "dev-master"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Imagine": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "drawing",
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "time": "2013-07-10 17:25:36"
+        },
+        {
+            "name": "mist-webit/yii2-bootstrap-material-design",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mist-webit/yii2-bootstrap-material-design.git",
+                "reference": "990ce642ab0c784e7f7f6b9f1a9f5ba6fc6d210b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mist-webit/yii2-bootstrap-material-design/zipball/990ce642ab0c784e7f7f6b9f1a9f5ba6fc6d210b",
+                "reference": "990ce642ab0c784e7f7f6b9f1a9f5ba6fc6d210b",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap-material-design": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mistwebit\\materialbootstrap\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mika Ståhlberg",
+                    "email": "mika.stahlberg@interaktiva.fi"
+                }
+            ],
+            "description": "Yii2 asset for Material design theme for Bootstrap 3 http://fezvrasta.github.io/bootstrap-material-design/",
+            "keywords": [
+                "extension",
+                "material",
+                "theme",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/mist-webit/yii2-bootstrap-material-design/tree/master",
+                "issues": "https://github.com/mist-webit/yii2-bootstrap-material-design/issues"
+            },
+            "time": "2015-03-10 19:59:05"
+        },
+        {
+            "name": "nex/yii2-chosen",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RomeroMsk/yii2-chosen.git",
+                "reference": "881afa090ff11183052aebeb61d3dacd54933da9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RomeroMsk/yii2-chosen/zipball/881afa090ff11183052aebeb61d3dacd54933da9",
+                "reference": "881afa090ff11183052aebeb61d3dacd54933da9",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "nex\\chosen\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Ovchinnikov",
+                    "email": "nex.software@gmail.com",
+                    "homepage": "https://github.com/RomeroMsk"
+                }
+            ],
+            "description": "Bootstrap Chosen widget for Yii2",
+            "homepage": "https://github.com/RomeroMsk/yii2-chosen",
+            "keywords": [
+                "bootstrap",
+                "bootstrap 3",
+                "chosen",
+                "extension",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-02-05 10:23:40"
+        },
+        {
+            "name": "perminder-klair/yii2-dropzone",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/perminder-klair/yii2-dropzone.git",
+                "reference": "36de5a44fc89d9674bc6247a157ef785b291ec10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/perminder-klair/yii2-dropzone/zipball/36de5a44fc89d9674bc6247a157ef785b291ec10",
+                "reference": "36de5a44fc89d9674bc6247a157ef785b291ec10",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kato\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Parminder Klair",
+                    "email": "perminder.klair@gmail.com"
+                }
+            ],
+            "description": "DropzoneJs Extention for Yii2",
+            "keywords": [
+                "dropzone",
+                "extension",
+                "upload",
+                "yii2"
+            ],
+            "time": "2014-11-20 21:15:18"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -547,6 +1026,54 @@
             "keywords": [
                 "composer",
                 "extension installer",
+                "yii2"
+            ],
+            "time": "2015-03-01 06:22:44"
+        },
+        {
+            "name": "yiisoft/yii2-imagine",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-imagine.git",
+                "reference": "0961343138b65bba447de84b2b300899617e6acc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/0961343138b65bba447de84b2b300899617e6acc",
+                "reference": "0961343138b65bba447de84b2b300899617e6acc",
+                "shasum": ""
+            },
+            "require": {
+                "imagine/imagine": "0.5.*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\imagine\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "amigo.cobos@gmail.com"
+                }
+            ],
+            "description": "The Imagine integration for the Yii framework",
+            "keywords": [
+                "helper",
+                "image",
+                "imagine",
                 "yii2"
             ],
             "time": "2015-03-01 06:22:44"
@@ -903,7 +1430,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "perminder-klair/yii2-dropzone": 20,
+        "nex/yii2-chosen": 20,
+        "mist-webit/yii2-bootstrap-material-design": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

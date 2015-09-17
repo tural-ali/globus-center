@@ -5,7 +5,9 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use common\models\LoginForm;
+use backend\models\AdminNavigation;
 use yii\filters\VerbFilter;
+
 
 /**
  * Site controller
@@ -55,7 +57,13 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $nav = AdminNavigation::find([
+            'parent' => 0,
+            'menuType' => 1,
+        ])->orderBy([
+            'sort' => SORT_ASC,
+        ])->asArray()->all();
+        return $this->render('index', ['nav' => $nav]);
     }
 
     public function actionLogin()

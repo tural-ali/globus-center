@@ -1,5 +1,6 @@
 html,
 body {
+    background-color: #fbfbfb !important;
     height: 100%;
 }
 
@@ -88,4 +89,37 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+
+.admin-main-menu a {
+    margin-bottom: 20px;
+}
+
+
+span.glyphicon {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+
+
+.grid-view a{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.grid-create {
+    color: #09974c;
+}
+
+.grid-view .glyphicon-pencil {
+    color: #786897;
+}
+
+.grid-view .glyphicon-trash {
+    color: red;
+}
+
+.grid-view .grid-items {
+    color: #ff892b;
 }
